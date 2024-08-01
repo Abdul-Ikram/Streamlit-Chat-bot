@@ -25,14 +25,14 @@ To set up and run this application locally, follow these steps:
 
 1. **Clone the Repository**
     ```
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Abdul-Ikram/Streamlit-Chat-bot.git
+    cd Streamlit-Chat-bot
     ```
 
 2. **Create and Activate a Virtual Environment**
     ```
     python -m venv venv
-    source venv/bin/activate   # On Windows: venv\Scripts\activate
+    venv\Scripts\activate
     ```
 
 3. **Install Dependencies**
@@ -41,9 +41,9 @@ To set up and run this application locally, follow these steps:
     ```
 
 4. **Set Up Environment Variables**
+Create a .env file in the root directory of the project. This file should include your OpenAI API key:
     ```
-    Create a .env file in the root directory of the project. This file should include your OpenAI API key:
-    OPENAI_API_KEY=your_openai_api_key_here
+    OPENAI_API_KEY="your_openai_api_key_here"
     ```
 
 5. **Run the FastAPI Backend**
@@ -53,5 +53,5 @@ To set up and run this application locally, follow these steps:
 
 6. **Run the Streamlit Application**
     ```
-    streamlit run app.py
+    streamlit run gui.py
     ```
